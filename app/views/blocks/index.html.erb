@@ -1,0 +1,26 @@
+<div class="background">
+  <div class="index">
+    <% @blocks.each do |block| %>
+        <div class="block">
+            <div class="header">
+              <em><%= block.data %></em>
+            </div>
+            <div class="indexValue">
+              <em>BlockChain Index:</em> <%= block.index %>
+            </div>
+            <div class="previousBlock">
+              Previous Block: <%= block.previousBlock[0..30] %>...<br>
+            </div>
+            <div class="currentBlock">
+              Encrypted Data: <%= block.scrambled[0..30] %>...<br>
+            </div>
+        </div>
+    <% end %>
+    <br>
+    <div class="topLeft">
+      <%= link_to 'New Block', new_block_path, class: "newTransaction topLeft" %>
+      <br>
+      <p>Chain Size: <%= @blocks.size %></p>
+    </div>
+  </div>
+</div>
