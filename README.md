@@ -12,4 +12,4 @@ Quite simply, each transaction holds the details of the previous transaction, cr
 
 Here is a quick preview of what I have running, but if you want to mess around a little more, you can check out the project live on Heroku.
 
-![alt text](blockchain.gif)
+![BlockChain](./blockchain.gif)
